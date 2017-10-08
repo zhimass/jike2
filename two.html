@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task two</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/two.css">
+	<script type="text/javascript" src="js/two.js"></script>
+</head>
+<body>
+	<div id="kuang">
+		<div class="login-kuang" id="login-kuang" style="display: none;">
+			<p>登录</p>
+			<div><b>账号</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="" class="id"></div>
+			<div><b>密码</b>&nbsp&nbsp&nbsp&nbsp<input type="password" name="" class="psd"></div>
+			<div class="login-button"><b>登录</b></div>
+		</div>
+		<div class="bg-mask" id="bg-mask" style="display: none"></div>
+	</div>
+	<div class="bg">
+		<div class="header">
+			<div class="header-l"></div>
+			<div class="header-r">
+				<span class="login" onclick="login();" title="点击登录">登录</span>
+				<span class="register">注册</span>
+			</div>
+		</div>
+		<div id="lb-container">
+		<div id="list" style="left: -810px;">
+			<img src="images/3.png" alt="图片"/>
+			<img src="images/1.png" alt="图片"/>
+			<img src="images/2.png" alt="图片"/>
+			<img src="images/3.png" alt="图片"/>
+			<img src="images/1.png" alt="图片"/>
+		</div>
+		<div id="button">
+			<span index="1" class="on"></span>
+			<span index="2" class="dian"></span>
+			<span index="3" class="dian"></span>
+		</div>
+		<a href="javascript:;" class="arrow" id="prev">&lt;</a>
+		<a href="javascript:;" class="arrow" id="next">&gt;</a>
+	</div>
+		<!-- <div class="contain">
+			<div class="search">
+				<div class="sousuo"><b>搜索</b></div>
+			</div>
+		</div> -->
+		<div class="contain">
+			<form class="sousuo" action="http://www.baidu.com/s" target="_blank" method="get">
+				<input type="text" name="" class="shuru" placeholder="输入大学名称">
+				<input type="submit" name="" value="搜索" class="search">
+			</form>
+			<div class="suggest" id="suggest">
+				<ul>
+					<li>搜索结果一</li>
+					<li>搜索结果二</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="school">
+			<div class="label">热门高校</div>
+			<div class="school-name"><span>安徽财经大学</span><span>安徽财经大学</span></div>
+			<div class="school-name"><span>安徽财经大学</span><span>安徽财经大学</span></div>
+			<div class="school-name"><span>安徽财经大学</span><span>安徽财经大学</span></div>
+			<div class="school-name"><span>安徽财经大学</span><span>安徽财经大学</span></div>
+			<div class="school-name"><span>安徽财经大学</span><span>安徽财经大学</span></div>
+		</div>
+		<hr size="2px" align="center" style="width: 800px; color: #111; margin-top:10px;">
+		<footer>
+			<div>
+				<span>版权所有</span>
+				<span class="xian"></span>
+				<span>重庆邮电大学</span>
+				<span class="xian"></span>
+				<span>重庆市南岸区崇文路2号</span>
+				<span class="xian"></span>
+				<span>400065</span>
+				<span class="xian"></span>
+				<span>渝ICP100059101-2</span>
+			</div>
+			<div>
+				<span>渝公安网备50010802001309</span>
+			</div>
+		</footer>
+		
+	</div>
+
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$('.shuru').bind('keyup',function(){//事件绑定bind  keyup为键盘事件，键盘松开时
+	$('.suggest').show();//调用show()方法
+
+})
+</script>
+</html>
